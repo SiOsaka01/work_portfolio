@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Work Portfolio</title>
+    <style>
+        
+
+        #footy {
+            position: absolute;
+            top: 660px;
+            width: 100%;
+            align-content: flex-start;
+            flex-flow: column wrap;
+        }
+
+        footy>div {
+            text-align: center;
+            z-index: 1;
+        }
+
+        
+        .bigger {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #container {
+            display: flexbox;
+            width: 100%;
+            background-color: rgb(110, 22, 22);
+
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: right;
+            /* display: block; */
+            color: #fcfdfc;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 20px;
+            text-decoration: none;
+            margin-right: 50px;
+            vertical-align: baseline;
+            margin-left: 10px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            /* background-color: #069941; */
+            color: rgb(255, 142, 89);
+        }
+
+        /* Add an active class to highlight the current page */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: rgb(250, 2, 2);
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+            display: none;
+        }
+
+        #logo {
+            float: left;
+        }
+
+        #main {
+            position: absolute;
+            top: 90px;
+            left: 2px;
+            /* border: 1px solid white; */
+            width: 99%;
+            display: flexbox;
+            height: 60%;
+            padding: 5px;
+        }
+
+        #bio {
+            color: #fcfdfc;
+            width: 400px;
+            /* border: 1px solid rgb(252, 248, 248); */
+            position: absolute;
+            top: 5px;
+            left: 2px;
+            margin-left: 10px;
+            display: flexbox;
+        }
+        #midSpot{
+            position: absolute;
+            top: 5px;
+            height: 455px;
+            left: 410px;
+            width: 49%;
+            display: flexbox; 
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+        #midSpot a {color:lightblue;}
+
+        #cv {
+            color: #fc4437;
+            width: 200px;
+            height: 60px;
+            z-index: 19;
+            position: absolute;
+            top: 480px;
+            left: 30px;
+            margin-right: 10px;
+            display: flexbox; 
+        }
+       
+        .cta-button {
+            height: 50px;
+            width: 200px;
+            background-color: rgb(240, 79, 16);
+            color: antiquewhite;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+
+        #ints {
+            color: #f0f4f8;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: 55px;
+            left: 1180px;
+            display: flexbox;
+        }
+
+        #ints h2{text-align: center;}
+        #ints a{color: aqua;}
+        #footer {
+            width: 99%;
+            /* border: 1px solid rgb(54, 101, 255); */
+            position: absolute;
+            top: 560px;
+            display: flexbox;
+            height: 180px;
+            /* background-color: #fcfdfc; */
+        }
+
+        /* Social media links */
+        .socialMediaLinks a {
+            font-size: 100px;
+            margin: 50px 50px 0 0;
+            /* color: #000000; */
+            text-decoration: none;
+        }
+
+        .socialMediaLinks a:hover {
+            color: #673ab7;
+        }
+
+        .socialMediaLinks a.fa-tiktok {
+            color: #080a0a;
+        }
+
+        .socialMediaLinks a.fa-youtube {
+            color: #ed0000;
+        }
+
+        /* .socialMediaLinks a.fa-facebook-f { 
+            color: #04a6f1;
+        } */
+
+        .socialMediaLinks a.fa-pinterest {
+            color: #C92228;
+        }
+
+        .socialMediaLinks a.fa-instagram {
+            color: #f88989;
+        }
+
+        .socialMediaLinks a.fa-google-plus-g {
+            color: red"
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="topnav" id="myTopnav">
+                <!--  Navbar Section -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i> </a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/contact.html">Contact</a>
+                <a href="https://stackoverflow.com/users/12607583/sio">Stack Overflow</a>
+                <a href="https://github.com/account">GitHub</a>
+                <a href="/html/myPyProjects.html">Projects</a>
+                <a href="https://siosaka01.github.io/Happy-Feet-Epic-Walkers/" id="logo"><img src="/images/hfew.png"
+                        alt="Logo" height="50" title="Click to view my walking webpage"></a>
+            </div>
+        </div>
+
+        <div id="main">
+            <!-- three areas mid body: bio, cv, interests -->
+
+            <div id="bio">
+                    <img src="/images/me1.jpg" alt="" height="200" width="200">
+                    <p>
+                    <h2>Hello I am Simon Osaka.</h2><span ></span><span class="bigger"> I aspire to be
+                        a web developer. I have worked as a graphic designer and a frontend developer within an
+                        organisation geared towards helping blind people access technology. I have a keen eye for detail
+                        especially in the English language. I am a team player and try to help others reach their goals
+                        whilst accomplishing my own. <br> My most recent position was an online Software Engineering
+                        student at justIT.com; now I am looking for further training, an apprenticeship and for
+                        work.<br></span></p>
+                    <h4></h4>
+            </div>
+
+            <div id="midSpot">
+                <h3 style="color:white;">My main website still unfinished but Coming Soon on WordPress </h3>
+                <img src="/images/mywpss.png" alt="my webpage" height="300" width="500"><br><br><br>
+                <div><a href="https://www.5realms.co.uk">unfinished WordPress website</a></div>
+            </div>
+
+            <div id="cv">
+                <!-- Download my CV -->
+                <button class="cta-button" id="cta" onclick="getCV();"><i class="fa fa-download"></i>Download my C.V.</button>
+            </div>
+
+            <div id="ints">
+                <h2 class="gold">My Interests:</h2>
+                <ul>
+                    <li>To reach my fitness goals I hike around the Peak District and Snowdonia.</li><br>
+                    <li><a href="https://www.facebook.com/groups/1768738856810053/>">Here's a link to my Facebook Walking Group </a></li><hr>
+                    <li>I am currently designing a browser game using html, css and JavaScript.</li><br>
+                    <li><a href=" https://github.com/SiOsaka01/5Realms-Search-for-the-Void-Dragon">This is a link to github for the RPG game splashscreen</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <!-- social media icons -->
+            <div style="display:flex; flex-wrap: wrap; text-align: center; justify-content: center;"
+                class="socialMediaLinks">
+                <span><a href="https://www.facebook.com/" class="fa fa-facebook" title="Facebook"
+                        target="_blank"></a></span>
+                <span><a href="https://uk.linkedin.com" class="fa fa-linkedin" title="Linked-In"
+                        target="_blank"></a></span>
+                <span><a href="https://www.instagram.com" class="fa fa-instagram" title="Instagram"
+                        target="_blank"></a></span>
+                <span><a href="https://www.youtube.com" class="fa fa-youtube" title="YouTube"
+                        target="_blank"></a></span>
+                <span><a href="https://www.google.com" class="fa fa-google-plus-official" title="Google"
+                        target="_blank"></a> </span>
+                <span><a href="https://www.tiktok.com/@simontheepicwalker" id="footTT" class="fa-brands fa-tiktok"
+                        target="_blank"></a> </span>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        function getCV() {
+            //cta-button calls this function
+            location.href = "https://siosaka01.github.io/current_IT_CV/index.html";  
+        }
+
+       
+    </script>
+</body>
+
+</html>
